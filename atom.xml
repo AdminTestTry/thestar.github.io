@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MyRoom</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://localhost:4000/"/>
+  <updated>2017-01-22T05:01:20.686Z</updated>
+  <id>http://localhost:4000/</id>
+  
+  <author>
+    <name>The Star</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Hexo在本地搭建个人博客（Windows）</title>
+    <link href="http://localhost:4000/2017/01/22/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88Windows%EF%BC%89/"/>
+    <id>http://localhost:4000/2017/01/22/使用Hexo在本地搭建个人博客（Windows）/</id>
+    <published>2017-01-22T01:30:00.000Z</published>
+    <updated>2017-01-22T05:01:20.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近工作上不算太忙，加上初交女友，有些欣喜若狂，想在互联网中找到属于自己的一方土地。百般搜索，巧遇hexo这款博客框架，于是有心尝试。我看了多个人的博客，以下内容多数是借鉴他人的。另外本人对着这方面算是小白，对gitHub等也是知之甚少，第一次搭建，第一次写文章也算是给博客充充场子。<br>初步搭建这个博客，可谓是历尽折磨，似懂非懂。不过我将过程列出，希望别人能够更顺利的搭建出自己的博客。<br><a id="more"></a></p>
+<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><h3 id="①-安装node"><a href="#①-安装node" class="headerlink" title="① 安装node"></a>① 安装node</h3><p>到<a href="http://moxfive.xyz/" target="_blank" rel="external">Node.js</a>官网下载相应平台的最新版本，一路安装即可。但是我看到有些博客说建议安装过node之后重启电脑，后面使用命令安装hexo的时候，会提示命令无效。我却没有遇到这样的问题，各位视情况而定吧。</p>
+<h3 id="②-安装git"><a href="#②-安装git" class="headerlink" title="② 安装git"></a>② 安装git</h3><p>作用：把本地的hexo内容提交到github上去。</p>
+<h3 id="③-申请gitHub"><a href="#③-申请gitHub" class="headerlink" title="③ 申请gitHub"></a>③ 申请gitHub</h3><p>作用：是用来做博客的远程创库、域名、服务器之类的。github账号没有的话直接申请就行了，跟一般的注册账号差不多。</p>
+<h3 id="④-安装Hexo"><a href="#④-安装Hexo" class="headerlink" title="④ 安装Hexo"></a>④ 安装Hexo</h3><p> WIN+R输入cmd，进入命令行模式。使用以下命令安装hexo（ps：以下命令中的$符号只为了让教程和实际看起来一致，实际输入命令只需输入$ 后面的命令即可）</p>
+<p><strong>$ npm install hexo-cli -g</strong></p>
+<p><strong>$ npm install hexo-deployer-git –save</strong></p>
+<p> 接下来创建放置博客文件的文件夹，如我hexo文件夹的位置为E:\blog，名字和地方可以自由选择，当然最好不要放在中文路径下。执行以下命令，Hexo会自动在该文件夹下下载搭建网站所需的所有文件。</p>
+<p><strong>$ hexo init C:\WWW\blog</strong></p>
+<p> 命令行模式下，进入自己博客文件的根目录</p>
+<p><strong>$ cd C:\WWW\blog</strong></p>
+<p><strong>$ npm install</strong></p>
+<p><strong>$ hexo server</strong></p>
+<h3 id="接下来在浏览器输入：http-localhost-4000，即可正常访问默认主题。"><a href="#接下来在浏览器输入：http-localhost-4000，即可正常访问默认主题。" class="headerlink" title="接下来在浏览器输入：http://localhost:4000，即可正常访问默认主题。"></a>接下来在浏览器输入：<a href="http://localhost:4000，即可正常访问默认主题。">http://localhost:4000，即可正常访问默认主题。</a></h3><h3 id="如果你不满足现在的默认主题，我推荐以下几个相关链接，供大家参考"><a href="#如果你不满足现在的默认主题，我推荐以下几个相关链接，供大家参考" class="headerlink" title="如果你不满足现在的默认主题，我推荐以下几个相关链接，供大家参考"></a>如果你不满足现在的默认主题，我推荐以下几个相关链接，供大家参考</h3><p><a href="http://moxfive.xyz/" target="_blank" rel="external">MOxFIVE</a> <a href="http://moxfive.coding.me/yelee/2.Basic-Usage/post-excerpt.html" target="_blank" rel="external">Yelee主题详细介绍</a></p>
+<hr>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://hexo.io/zh-cn/api/tag.html" target="_blank" rel="external">Hexo官网</a><br><a href="http://luckykun.com/work/2016-04-23/heoll-hexo.html" target="_blank" rel="external">LuckyKun</a><br><a href="http://cnodejs.org/topic/5700997a93a6967159553b91" target="_blank" rel="external">http://cnodejs.org/topic/5700997a93a6967159553b91</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近工作上不算太忙，加上初交女友，有些欣喜若狂，想在互联网中找到属于自己的一方土地。百般搜索，巧遇hexo这款博客框架，于是有心尝试。我看了多个人的博客，以下内容多数是借鉴他人的。另外本人对着这方面算是小白，对gitHub等也是知之甚少，第一次搭建，第一次写文章也算是给博客充充场子。&lt;br&gt;初步搭建这个博客，可谓是历尽折磨，似懂非懂。不过我将过程列出，希望别人能够更顺利的搭建出自己的博客。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术人生" scheme="http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%94%9F/"/>
+    
+    
+      <category term="Hexo" scheme="http://localhost:4000/tags/Hexo/"/>
+    
+      <category term="PHP" scheme="http://localhost:4000/tags/PHP/"/>
+    
+      <category term="MarkDown" scheme="http://localhost:4000/tags/MarkDown/"/>
+    
+      <category term="恋爱这条路，需要坚持，包容，耐心，信心，信任，关爱" scheme="http://localhost:4000/tags/%E6%81%8B%E7%88%B1%E8%BF%99%E6%9D%A1%E8%B7%AF%EF%BC%8C%E9%9C%80%E8%A6%81%E5%9D%9A%E6%8C%81%EF%BC%8C%E5%8C%85%E5%AE%B9%EF%BC%8C%E8%80%90%E5%BF%83%EF%BC%8C%E4%BF%A1%E5%BF%83%EF%BC%8C%E4%BF%A1%E4%BB%BB%EF%BC%8C%E5%85%B3%E7%88%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://localhost:4000/2017/01/19/hello-world/"/>
+    <id>http://localhost:4000/2017/01/19/hello-world/</id>
+    <published>2017-01-19T08:23:44.608Z</published>
+    <updated>2017-01-22T01:58:17.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</excerpt></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h2 id="More-info-Deployment“"><a href="#More-info-Deployment“" class="headerlink" title="More info: Deployment“"></a>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a>“</h2></the>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="技术人生" scheme="http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%94%9F/"/>
+    
+    
+      <category term="Hexo" scheme="http://localhost:4000/tags/Hexo/"/>
+    
+      <category term="MarkDown" scheme="http://localhost:4000/tags/MarkDown/"/>
+    
+      <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
